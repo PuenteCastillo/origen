@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container full-h">
+      <div class="image-container child"></div>
+    </div>
+    <style>
+      .full-h {
+        min-height: 100vh;
+        width: 100%;
+        background-color: red;
+        display: flex;
+      }
+      .child {
+        background-color: blue;
+        /* margin: auto; */
+      }
+    </style>
+
+    <script>
+      document.querySelectorAll(".header-background").forEach((item) => {
+        item.classList.add("invisable-nav");
+      });
+
+      document.querySelectorAll(".desktop").forEach((item) => {
+        item.classList.add("invisable-logo");
+      });
+
+      let limitBottom =
+        document.documentElement.offsetHeight - window.innerHeight;
+      window.addEventListener("scroll", function () {
+        console.log("scroll", document.documentElement.scrollTop);
+        console.log("set", window.innerHeight);
+        if (document.documentElement.scrollTop > window.innerHeight) {
+          document.querySelectorAll(".header-background").forEach((item) => {
+            item.classList.remove("invisable-nav");
+          });
+
+          document.querySelectorAll(".desktop").forEach((item) => {
+            item.classList.remove("invisable-logo");
+          });
+        }
+
+        if (document.documentElement.scrollTop < window.innerHeight) {
+          document.querySelectorAll(".header-background").forEach((item) => {
+            item.classList.add("invisable-nav");
+          });
+
+          document.querySelectorAll(".desktop").forEach((item) => {
+            item.classList.add("invisable-logo");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

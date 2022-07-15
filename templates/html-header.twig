@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- [if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" {{ site.language_attributes }}> <![endif] -->
+<!-- [if IE 9]><html class="no-js no-svg ie ie9 lt-ie9 lt-ie8" {{ site.language_attributes }}> <![endif] -->
+<!-- [if gt IE 9]><! -->
+<html class="no-js no-svg" {{ site.language_attributes }}>
+	<!-- <![endif] -->
+	<head>
+		<meta charset="{{ site.charset }}" />
+		<meta name="description" content="{{ description }}" />
+		<link rel="stylesheet" href="{{ site.theme.link }}/style.css" type="text/css" media="screen" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="author" href="{{ site.theme.link }}/humans.txt" />
+		<link rel="pingback" href="{{ site.pingback_url }}" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="stylesheet" href="https://use.typekit.net/naa0yze.css" />
+		<link rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous" />
+
+		{# google fonts #}
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU"
+			crossorigin="anonymous" />
+		{# slick Casousel #}
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+			integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+			integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+
+		{# OnLoadAnimations #}
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+		{{ additional_cdn }}
+
+		<!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
+		<meta property="og:title" content="{{ siteTitle }}" />
+		<meta property="og:description" content="{{ metaDescription }}" />
+		<meta property="og:image" content="{{ meteImage }}" />
+		<meta property="og:url" content="{{ url }}" />
+		{# //todo Make this a custom field #}
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		{{ GA }}
+		<style>
+			{{ custom_css }}
+		</style>
+
+		{{ function('wp_head') }}
+	</head>
+
+	<div id="mainNav" class="sticky-top">
+		{% include 'components/Nav/desktopNav.twig' %}
+	</div>
+</html>

@@ -1,0 +1,90 @@
+// .body {
+// 	height: 8000px;
+// 	background-color: red;
+// }
+
+#desktopNav {
+	position: relative;
+	background-color: white;
+	.container {
+		width: 1140px;
+		max-width: 90vw;
+	}
+	.row {
+		height: 100px;
+		transition: all 0.5s ease;
+		.link-col {
+			background-color: $accentColor;
+		}
+	}
+
+	.bgColor {
+		background-color: $accentColor;
+		// z-index: -10;
+		width: 50vw;
+		height: 100px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: all 0.5s ease;
+	}
+
+	.logoContainer {
+		height: 100%;
+		display: flex;
+		img {
+			margin: auto 0;
+
+			//   width: 100%;
+			//   object-fit: contain;
+		}
+	}
+	.linkCOntainer {
+		z-index: 9999;
+		height: 100%;
+		display: inline-block;
+		float: right;
+		.centerContainer {
+			display: flex;
+			height: 100%;
+
+			.child {
+				margin: auto 0;
+			}
+		}
+	}
+	a {
+		font-family: 'Inter', sans-serif;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 14.4px;
+		text-align: right;
+		color: #58595b;
+		margin-left: 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: all 0.5s ease;
+	}
+	a:hover {
+		color: white;
+		transition: all 0.5s ease;
+	}
+}
+
+.isSticky {
+	.row {
+		height: 80px !important;
+		transition: all 1s ease;
+	}
+	.bgColor {
+		height: 80px !important;
+		transition: all 1s ease;
+	}
+}
+
+// hide on mobile
+@media (max-width: 768px) {
+	#desktopNav {
+		display: none;
+	}
+}

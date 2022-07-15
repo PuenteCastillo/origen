@@ -1,0 +1,24 @@
+#whyOrigen {
+	// background-color: red;
+	padding-top: 175px;
+	padding-bottom: 175px;
+	// shrink padding on mobile device
+	@media (max-width: 756px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	h4 {
+		color: $accentColor;
+		text-align: center;
+
+		margin: auto;
+		margin-bottom: 30px;
+	}
+	.dividerTwo {
+		margin-bottom: 40px;
+	}
+	.uniquefont {
+		text-align: center;
+		color: #3d3634;
+	}
+}

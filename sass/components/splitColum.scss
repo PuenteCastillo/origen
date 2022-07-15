@@ -1,0 +1,54 @@
+#featuredIndustry {
+	padding-top: 110px;
+	padding-bottom: 110px;
+	// background-color: #f6f6f7;
+	// shrink padding on mobile device
+	@media (max-width: 992px) {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.imgContainer {
+		height: 560px;
+		position: relative;
+		border-radius: 10px;
+		overflow: hidden;
+		// shrink hight on mobile device
+		@media (max-width: 765px) {
+			height: 300px;
+		}
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.content {
+		img {
+			// margin-top: 50px;
+			margin-bottom: 30px;
+		}
+		p {
+			margin-top: 20px;
+			margin-bottom: 50px;
+			color: $textlight;
+		}
+		.dividerThree {
+			margin-bottom: 50px;
+		}
+		// add top and bottom margin on mobile device
+		@media (max-width: 992px) {
+			margin-top: 50px !important;
+			margin-bottom: 50px !important;
+		}
+	}
+	.content-left {
+		width: 420px;
+		max-width: 100%;
+		margin: auto;
+		// make width 100% on tablet and mobile device
+		@media (max-width: 992px) {
+			width: 100%;
+		}
+	}
+}

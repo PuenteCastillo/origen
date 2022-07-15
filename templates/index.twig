@@ -1,0 +1,14 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+	<div>
+		{% include 'components/home/header.twig' %}
+		{% include 'components/home/whyOrigen.twig' %}
+		<div class="gradient-bg">
+			{% include 'components/home/whatWeDo.twig' %}
+			{% include '/components/home/featuredIndusty.twig' %}
+			{% include '/components/home/stats.twig' %}
+		</div>
+		{% include '/components/home/blog.twig' %}
+	</div>
+{% endblock %}

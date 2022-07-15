@@ -1,0 +1,98 @@
+.homeHeader {
+	// background-color: black;
+	max-width: 100vw;
+	overflow: hidden;
+	height: 900px;
+	position: relative;
+
+	// change height on mobile device
+	@media (max-width: 768px) {
+		height: 100vw;
+		min-height: 740px;
+	}
+	.container {
+		width: 1140px;
+		max-width: 90vw;
+		position: relative;
+	}
+	.galleryImages {
+		background-color: black;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		div {
+			width: 100%;
+			height: 100%;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	img {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	.parent {
+		display: flex;
+		height: 900px;
+		// change height on mobile device
+		@media (max-width: 768px) {
+			height: 100vw;
+			min-height: 740px;
+		}
+		.child {
+			margin: auto;
+			color: white;
+			width: 100%;
+			// background-color: yellowgreen;
+
+			.copyContainer {
+				width: 440px;
+				max-width: 100%;
+				// background-color: blue;
+			}
+		}
+	}
+	h1 {
+		text-align: left;
+		color: #fff;
+	}
+	p {
+		line-height: 40px;
+		text-align: left;
+		color: #fff;
+	}
+	.arrow-placement {
+		min-height: 100px;
+		min-width: 200px;
+		// background-color: red;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-bottom: 40px;
+		font-size: 30px;
+
+		// move down on mobile devices and align to the left of container
+		@media (max-width: 768px) {
+			margin-right: 20px;
+			margin-bottom: 10px;
+		}
+
+		i {
+			margin-left: 40px;
+			text-align: right;
+			float: right;
+			color: $light;
+			transition: all 0.5s ease;
+			//align left on mobile devices
+		}
+		i:hover {
+			color: $accentColor;
+			transition: all 0.5s ease;
+		}
+	}
+}

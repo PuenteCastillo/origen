@@ -1,0 +1,20 @@
+$accentColor: #8ec740;
+$secoundaryColor: #0e4877;
+$light: #cccccc;
+
+// text color variables
+$textlight: #808285;
+
+.gradient-bg {
+	background: rgb(246, 246, 247);
+	background: linear-gradient(
+		183deg,
+		rgba(246, 246, 247, 1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}
+
+.container {
+	width: 1140px;
+	max-width: 90vw;
+}

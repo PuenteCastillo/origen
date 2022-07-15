@@ -1,0 +1,139 @@
+.footerLayout {
+	margin-top: 75px;
+
+	.logoContainer {
+		margin-bottom: 30px;
+	}
+	.bigDivider {
+		width: 1440px;
+		max-width: 90vw;
+		height: 1px;
+		background-color: #dadada;
+		margin: auto;
+		margin-bottom: 100px;
+	}
+	.footerContentContainer {
+		margin-bottom: 50px;
+	}
+
+	a,
+	p {
+		font-family: 'Inter', sans-serif;
+		font-weight: 400;
+		font-size: 13px;
+		letter-spacing: 0.04em;
+		line-height: 20px;
+		text-align: left;
+		color: #59595b;
+		display: block;
+		margin-bottom: 15px;
+		transition: all 0.5s ease;
+	}
+	a:hover {
+		color: $accentColor;
+		text-decoration: none;
+		transition: all 0.5s ease;
+	}
+	h3 {
+		font-family: 'Inter', sans-serif;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: left;
+		color: #0e4877;
+		margin-bottom: 30px;
+		// add image after h3
+		&:after {
+			content: url('/wp-content/uploads/2022/07/footer-divider.png');
+			display: block;
+			width: 20px;
+			height: 20px;
+			// margin-left: 10px;
+		}
+
+		// make font size smaller for mobile
+		@media (max-width: 768px) {
+			font-size: 12px;
+		}
+	}
+	.footerPOC {
+		// add margin-bottom for mobile
+		@media (max-width: 768px) {
+			margin-bottom: 40px;
+		}
+	}
+	// hide on mobile
+
+	.hideOnMobile {
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+}
+
+#copyRightFooter {
+	background-color: #151515;
+
+	padding-top: 30px;
+	padding-bottom: 30px;
+	// add more bottom padding for mobile
+	@media (max-width: 768px) {
+		padding-bottom: 60px;
+	}
+	.container {
+		position: relative;
+	}
+	.copyright {
+		color: #808285;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: left;
+		color: #808285;
+		opacity: 0.4;
+		margin-bottom: 0px;
+	}
+
+	.leftContent {
+		display: inline-block;
+		// background-color: red;
+		// float: left;
+		@media (max-width: 768px) {
+			display: block;
+			// background-color: blue;
+		}
+	}
+	.rightContent {
+		display: inline-block;
+		// background-color: blue;
+		float: right;
+		top: 0;
+
+		// diplay block on mobile
+		@media (max-width: 768px) {
+			display: block;
+			width: 100%;
+			// background-color: red;
+		}
+	}
+
+	a {
+		font-family: 'Inter', sans-serif;
+		font-weight: 300;
+		font-size: 10px;
+		line-height: 20px;
+		text-align: left;
+		color: #808285;
+	}
+	.externalLinks {
+		color: #808285;
+		font-weight: 300;
+		font-size: 12px;
+
+		i {
+			color: $accentColor;
+			margin-left: 10px;
+		}
+		margin-bottom: 0px;
+	}
+}

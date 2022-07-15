@@ -1,0 +1,63 @@
+#blogModule {
+	position: relative;
+	max-width: 100vw;
+	overflow: hidden;
+	.bg {
+		width: 100vw;
+		height: 470px;
+		overflow: hidden;
+		background-color: black;
+		position: absolute;
+		top: 0;
+		z-index: -9999;
+		img {
+			width: 100%;
+			min-height: 100%;
+			object-fit: cover;
+		}
+	}
+	.titleRow {
+		padding-top: 90px;
+		padding-bottom: 90px;
+		text-align: center;
+		h4 {
+			color: white;
+			margin-bottom: 25px;
+		}
+		.dividerThree {
+			margin: auto;
+			background-color: white;
+		}
+	}
+	.contentBox {
+		width: 373px;
+		max-width: 100%;
+		margin-bottom: 75px;
+		// background-color: red;
+
+		// make width 100% on tablet and mobile
+		@media (max-width: 992px) {
+			width: 100%;
+		}
+
+		.imgContainer {
+			width: 100%;
+			height: 290px;
+			border: 5px;
+			position: relative;
+			margin-bottom: 30px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 30px;
+			text-align: left;
+			color: #808285;
+		}
+	}
+}
